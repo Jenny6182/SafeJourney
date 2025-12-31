@@ -4,12 +4,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" /> <!-- css for search bar-->
     <title>SafeJourney</title>
 </head>
 
 <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script> <!-- script for search bar-->
+    <!-- add control of search bar to the map, replace with actual map and it should work-->
+    <script> 
+        new L.Control.Geocoder().addTo(map);
+    </script>
 </body>
 
 </html>
